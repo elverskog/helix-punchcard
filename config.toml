@@ -1,0 +1,33 @@
+theme = "eelight"
+
+[editor]
+line-number = "absolute"
+mouse = false
+cursorline = true
+
+
+
+# end-of-line-diagnostics = "hint"
+# [editor.inline-diagnostics]
+# cursor-line = "warning" # show warnings and errors on the cursorline inline
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+
+# [editor.lsp]
+# display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false

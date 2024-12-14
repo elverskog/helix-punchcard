@@ -1,0 +1,141 @@
+"ui.background" = { fg="gray5", bg="bg" }
+"ui.text" = "gray1"
+"ui.background.separator" = { fg="gray5"}	 # Picker separator below input line
+"ui.cursor"	= { fg="gray10", bg="gray1" }
+"ui.cursor.normal" = { fg="gray10", bg="gray1" }	
+"ui.cursor.insert" = { fg="gray10", bg="green" }	
+"ui.cursor.select" = { fg="gray10", bg="gold" }
+"ui.cursor.match"	= { fg="gray10", bg="red" } # Matching bracket etc.
+"ui.cursor.primary"	= { fg="gray10", bg="gray1" }	# Cursor with primary selection
+"ui.cursor.primary.normal" = { fg="gray10", bg="gray1" }	
+"ui.cursor.primary.insert" = { fg="gray10", bg="green" }	
+"ui.cursor.primary.select" = { fg="gray10", bg="gold" }	
+"ui.debug.breakpoint" = { fg="redDark" }	# Breakpoint indicator, found in the gutter
+# "ui.debug.active"	# Indicator for the line at which debugging execution is paused at, found in the gutter
+"ui.gutter" = { fg="green", bg="bg" }	# Gutter
+"ui.gutter.selected" = { fg="gray1", bg="gray8"	}	# Gutter for the line the cursor is on
+# "ui.highlight.frameline"	# Line at which debugging execution is paused at
+"ui.linenr"	= "gray5" # Line numbers
+"ui.linenr.selected" = { fg="gray3", bg="gray8"	} # Line number for the line the cursor is on
+"ui.statusline" = { fg="gray1", bg="gray6" }	# Statusline
+"ui.statusline.inactive" = { fg="gray1", bg="gray5" }	# Statusline (unfocused document)
+"ui.statusline.normal" = { fg="gray1", bg="blue" }	# Statusline mode during normal mode (only if editor.color-modes is enabled)
+"ui.statusline.insert" = { fg="green", bg="green" }	# Statusline mode during insert mode (only if editor.color-modes is enabled)
+"ui.statusline.select" = { fg="gray1", bg="gold" }	# Statusline mode during select mode (only if editor.color-modes is enabled)
+"ui.statusline.separator" = { fg="gray1", bg="gray5" }	# Separator character in statusline
+"ui.bufferline" = { fg="gray1", bg="gray4" }	# Style for the buffer line
+"ui.bufferline.active" = { fg="gray1", bg="gray5" }	# Style for the active buffer in buffer line
+"ui.bufferline.background" = { fg="gray1", bg="gray5" }	# Style for bufferline background
+"ui.popup" = { fg="bg", bg="gray4" }	# Documentation popups (e.g. Space + k)
+# "ui.popup.info"	# Prompt for multiple key options
+"ui.window" = { fg="gray4" }	# Borderlines separating splits
+"ui.help" = { fg="red", bg="gray8" } # Description box for commands
+# "ui.text" = { fg="blue" } # Default text style, command prompts, popup text, etc.
+# "ui.text.focus"	= { fg="cyan" } # The currently selected line in the picker
+# "ui.text.inactive" = "gray5" # Same as ui.text but when the text is inactive (e.g. suggestions)
+"ui.text.info" = { fg="bg", bg="gray4" }	# The key: command text in ui.popup.info boxes
+"ui.virtual.ruler" = { fg="gray1", bg="gray10" }	# Ruler columns (see the editor.rulers config)
+# "ui.virtual.whitespace" = { fg="white", bg="cyan" }	# Visible whitespace characters
+# "ui.virtual.indent-guide"	# Vertical indent width guides
+# "ui.virtual.inlay-hint"	# Default style for inlay hints of all kinds
+# "ui.virtual.inlay-hint.parameter"	# Style for inlay hints of kind parameter (LSPs are not required to set a kind)
+# "ui.virtual.inlay-hint.type"	# Style for inlay hints of kind type (LSPs are not required to set a kind)
+# "ui.virtual.wrap"	# Soft-wrap indicator (see the editor.soft-wrap config)
+# "ui.virtual.jump-label"	# Style for virtual jump labels
+"ui.menu"	= { fg="bg", bg="gray4" }	# Code and command completion menus
+"ui.menu.selected" = { fg="gray10", bg="gray3" } # Selected autocomplete item
+"ui.menu.scroll" = { fg="gray1", bg="gray3" }	# fg sets thumb color, bg sets track color of scrollbar
+"ui.selection" = { bg="gray9" } # For selections in the editing area
+"ui.selection.primary" = { bg="goldLight" }
+"ui.highlight" = { bg="goldLight" }	# Highlighted lines in the picker preview
+"ui.cursorline.primary" = { fg="gray1", bg="gray8" }	# The line of the primary cursor (if cursorline is enabled)
+"ui.cursorline.secondary" = { fg="gray1", bg="gray8" } # The lines of any other cursors (if cursorline is enabled)
+"ui.cursorcolumn.primary" = { fg="gray1", bg="gray10" } # The column of the primary cursor (if cursorcolumn is enabled)
+"ui.cursorcolumn.secondary" = { fg="gray1", bg="gray7" } # The columns of any other cursors (if cursorcolumn is enabled)
+"warning"	= "green" # Diagnostics warning (gutter)
+"error" = "red"	# Diagnostics error (gutter)
+"info" = "blue"	# Diagnostics info (gutter)
+"hint" = "cyan"	# Diagnostics hint (gutter)
+"diagnostic" = "cyan"	# Diagnostics fallback style (editing area)
+"diagnostic.hint" = "cyan"	# Diagnostics hint (editing area)
+"diagnostic.info" = "blue"	# Diagnostics info (editing area)
+"diagnostic.warning" = "gold"	# Diagnostics warning (editing area)
+"diagnostic.error" = "red"	# Diagnostics error (editing area)
+"diagnostic.unnecessary" = "magenta"	# Diagnostics with unnecessary tag (editing area)
+"diagnostic.deprecated" = "magenta"	# Diagnostics with deprecated tag (editing area)
+
+# syntax ###################################################################
+
+attribute = { fg = "magentaDark", modifiers = ["bold"] }
+keyword = "gray2"
+"keyword.directive" = "lilac" # -- preprocessor comments (#if in C)
+namespace = "blueDark"
+punctuation = "gray4"
+"punctuation.delimiter" = "greenDark"
+operator = "cyanDark"
+special = "goldDark"
+"variable.other.member" = "gray2"
+variable = "gray1"
+"variable.parameter" = { fg = "black", modifiers = ["underlined"] }
+"variable.builtin" = { fg="gray3", modifiers=["bold"] }
+type = "gray2"
+# "type.builtin" = "gray3" # TODO: distinguish?
+constructor = "lilac"
+function = { fg="gray3", modifiers=["bold"] }
+"function.macro" = "lilac"
+"function.builtin" = { fg="goldDark", modifiers=["bold"] }
+tag = "gray3"
+comment = "gray5"
+constant = "gray4"
+"constant.builtin" = "magentaDark"
+string = "gray3"
+"constant.numeric" = "blueDark"
+"constant.character.escape" = "gray2"
+# used for lifetimes
+label = "redBright"
+
+"markup.heading" = "magentaDark"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "silver", modifiers = ["underlined"] }
+"markup.link.text" = "blueDark"
+"markup.raw" = "gray1"
+
+
+[palette]
+# bg =        "#d8d5d5"
+bg =        "#cac6c6"
+
+gray1 =     "#262626"
+gray2 =     "#3e3d32"
+gray3 =     "#58574b"
+gray4 =     "#6b6b6b"
+gray5 =     "#8b8888"
+gray6 =     "#b0b0b0"
+gray7 =     "#c2c2c2"
+gray8 =     "#d6d2d2"
+gray9 =     "#e0dddd"
+gray10 =    "#e8e6e6"
+
+blue =      "#52a2b2"
+cyan =      "#5aaaaa"
+green =     "#569f7a"
+gold =      "#8e700b"
+red =       "#a22323"
+magenta =   "#821a65"
+
+blueDark =      "#284c5a"
+cyanDark =      "#326262"
+greenDark =     "#305439"
+goldDark =      "#564207"
+redDark =       "#5f1515"
+magentaDark =   "#490f39"
+
+goldLight = "#cbc3bb"
+
+redBright = "#ff0000"
+black =     "#000000"
+white =     "#ffffff"
+
+
